@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rotating Face</title>
+  <link rel="shortcut icon" type="image/png" href="yes1.jpg"/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="imgContainer">
+            <img class="rotating" id="image" src="yes1.jpg" alt="yes" />
+        </div>
+        <div class="inputContainer">
+            <input type='file' onchange="changeImage(this)" />
+            <p>Select Speed</p>
+            <input id="val" type="range" min="1" max="10" value="5" onchange="updateSpeed(this)">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
